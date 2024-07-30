@@ -46,15 +46,15 @@ function Home() {
     //     <h1>Wheat Yield Estimation Portal</h1>
     //   </div>
     // </div>
-    <>
+    <div className='bg-light p-3'>
       <h1 className='text-center mb-3'>Wheat Yield Estimation Portal</h1>
-      <div className='d-flex align-items-center justify-content-center'>
+      <div className='d-flex align-items-center justify-content-center container mx-auto w-100'>
         <div className="row">
           <div className="col-sm-6">
             <div className="card">
               <div className="card-body">
                 <h5 className="card-title">Yield Crop Estimation</h5>
-                <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut sodales mauris, eget euismod velit. Nam fringilla quam quam, nec semper augue venenatis rhoncus. Proin non ligula mauris. Aliquam sollicitudin interdum ipsum, sed dapibus turpis vestibulum vitae. Suspendisse non dolor ut lorem pellentesque rutrum eu sit amet nisl. Sed sollicitudin quam odio, sit amet ornare velit ornare vel. Phasellus tempor nibh elit, id tincidunt dolor dapibus at. Pellentesque varius interdum orci, quis mollis felis lobortis nec. Aliquam feugiat ligula ac placerat mollis. Suspendisse metus elit, dapibus a efficitur a, feugiat pharetra sapien. Suspendisse dui magna, viverra vel scelerisque sed, suscipit quis nibh. Donec sodales ipsum et placerat dignissim. Fusce bibendum dignissim tortor, in vestibulum nibh sollicitudin in.</p>
+                <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut sodales mauris, eget euismod velit. Nam fringilla quam quam, nec semper augue venenatis rhoncus. Proin non ligula mauris. Aliquam sollicitudin interdum ipsum, sed dapibus turpis vestibulum vitae. Suspendisse non dolor ut lorem pellentesque rutrum eu sit amet nisl. Sed sollicitudin quam odio, sit amet ornare velit ornare vel. Phasellus tempor nibh elit, id tincidunt dolor dapibus at. Pellentesque varius interdum orci, quis mollis felis lobortis nec.</p>
                 <a href="/Predictor" className="btn btn-primary">Go To Predictor</a>
               </div>
             </div>
@@ -63,14 +63,14 @@ function Home() {
             <div className="card">
               <div className="card-body">
                 <h5 className="card-title">Disease Classification (Coming Soon)</h5>
-                <p className="card-text">Maecenas sodales commodo lobortis. Nullam dignissim magna varius, dictum odio ut, suscipit quam. Curabitur porta efficitur diam, eget condimentum nisi tincidunt nec. Donec pretium egestas justo ac laoreet. Phasellus vitae mattis lacus. Maecenas sed ante mi. Vivamus eget dolor ac dolor lobortis consectetur at vitae diam. Nam nisi purus, fermentum et leo a, posuere finibus ante. Curabitur justo mi, pretium eu enim a, ultrices faucibus eros. Donec euismod lobortis urna vitae vestibulum. Nunc varius pharetra tortor, ut auctor eros pellentesque ultricies. Cras et ex id augue pharetra sodales. Fusce vulputate sollicitudin turpis, non convallis massa tempor at. Praesent sed dolor quis elit egestas efficitur et at purus. Quisque diam purus, sollicitudin vitae ex at, hendrerit ultrices diam.</p>
+                <p className="card-text">Maecenas sodales commodo lobortis. Nullam dignissim magna varius, dictum odio ut, suscipit quam. Curabitur porta efficitur diam, eget condimentum nisi tincidunt nec. Donec pretium egestas justo ac laoreet. Phasellus vitae mattis lacus. Maecenas sed ante mi. Vivamus eget dolor ac dolor lobortis consectetur at vitae diam. Nam nisi purus, fermentum et leo a, posuere finibus ante. Curabitur justo mi, pretium eu enim a, ultrices faucibus eros. Donec euismod lobortis urna vitae vestibulum. Nunc varius pharetra tortor, ut auctor eros pellentesque ultricies.</p>
                 <a href="#" className="btn btn-primary disabled">Go To Classifier</a>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 

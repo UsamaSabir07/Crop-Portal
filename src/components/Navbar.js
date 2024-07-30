@@ -108,7 +108,7 @@ export default function Navigationbar(props) {
     //     </div>
     //   </div>
     // </nav>
-    <Navbar collapseOnSelect expand='lg' className={`mb-3 bg-${props.mode}`} variant={props.mode == "dark" ? "dark" : "light"}>
+    <Navbar collapseOnSelect expand='lg' sticky="top" className={`bg-${props.mode}`} variant={props.mode == "dark" ? "dark" : "light"}>
       <Container fluid>
         <Navbar.Brand href="/">{props.title}</Navbar.Brand>
         <Navbar.Toggle aria-controls="offcanvasNavbar-expand-lg" />

@@ -9,6 +9,7 @@ import React, { useState } from "react";
 import FileUpload from "./components/FileUpload";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import styled from "styled-components";
+import Header from "./components/Header";
 
 function App() {
   const [mode, setMode] = useState(localStorage.getItem("theme") ? localStorage.getItem("theme") : "light");
@@ -68,24 +69,28 @@ function App() {
   return (
     <>
       <Navigationbar
-        title="Wheat Crop Portal"
+        title="AITeC Crop Portal"
         mode={mode}
         toggleMode={toggleMode}
         textColor={textColor}
         toggleStyle={toggleStyle}
         btnText={btnText}
       />
-      <Pages>
-        <div className="container my-3">
+      {/* <Header /> */}
+      
           <Routes>
-            <Route path="/" element={<Home />}></Route>
+            <Route path="/"  element={
+              <div>
+                <Header /> {/* Display Header only on the homepage */}
+                <Home />
+              </div>
+            }></Route>
             <Route path="/About" element={<About />}></Route>
             {/* <Route path="/Predictor" element={<FileUpload />}></Route> */}
             <Route path="/Predictor" element={<Test />}></Route>
             <Route path="/Comments" element={<Form />}></Route>
           </Routes>
-        </div>
-      </Pages>
+        
     </>
   );
 }
